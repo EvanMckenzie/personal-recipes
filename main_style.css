@@ -7,6 +7,15 @@ body {
     justify-content: space-between;
 }
 
+.grow-on-hover {
+    transition: 0.2s;
+}
+
+.grow-on-hover:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
 /*------ HEADER ------*/
 
 header {
@@ -20,6 +29,7 @@ header {
 .header-img {
     width: 35px;
     height: 35px;
+    opacity: 0.8;
 }
 
 .right-buttons {
