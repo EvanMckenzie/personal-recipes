@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/assets/css/styles.css">
-        <title> Home </title>
+        <title> {{ page.title }} </title>
     </head>
     <body>
         <header>
@@ -16,19 +16,7 @@
                 <a href="index.html"><img src="/assets/images/night-day.svg" class="header-img grow-on-hover"></a>
             </div>
         </header>
-        <nav>
-    
-        <a href="/" class="current">
-            Home
-        </a>
-    
-        <a href="/about.html" >
-            About
-        </a>
-    
-</nav>
-        <h1 class="page-heading"> MAIN PAGE!</h1>
-<p class="page-blurb">This is the primary page of the delicious dish recipe repository. Seek the sidebar to search for specific sustenance.</p>
-
+        {% include navigation.html %}
+        {{ content }}
     </body>
 </html>
