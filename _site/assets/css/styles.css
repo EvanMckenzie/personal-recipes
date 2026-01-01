@@ -1,5 +1,44 @@
-.current {
-  color: green;
+/*------ BODY ------*/
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*------ NAV ------*/
+.site-nav {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-item img {
+  width: auto;
+  height: 32px;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.nav-item img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.nav-left a,
+.nav-right a {
+  margin-right: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-left a:last-child,
+.nav-right a:last-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,14 @@
-- name: Home
-  link: /
-- name: About
-  link: /about.html
+nav:
+  left:
+    - name: About
+      image: /assets/images/menu-burger.svg
+      link: /about.html
+      alt: About
+    - name: Home
+      image: /assets/images/home.svg
+      link: /
+      alt: Home
+  right:
+    - name: Theme
+      image: /assets/images/night-day.svg
+      alt: ThemeToggle
