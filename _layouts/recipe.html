@@ -8,6 +8,21 @@
     </head>
     <body>
         {% include navigation.html %}
-        {{ content }}
+
+        {% assign ingredients = site.data.ingredients[page.ingredients_key] %}
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    {% for item in ingredients %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="instructions">
+                <h2>Instructions</h2>
+                {{ content }}
+            </div>
+        </div>
     </body>
 </html>

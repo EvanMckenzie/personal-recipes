@@ -1,8 +1,8 @@
 <div class="recipe-grid">
     {% for recipe in site.data.recipes %}
         <a href="{{ recipe.link | relative_url }}" class="recipe-tile">
+            <div class="tile-title">{{ recipe.title }}</div>
             <img src="{{ recipe.image | relative_url }}" alt="{{ recipe.title }}">
         </a>
-        <div class="tile-title">{{ recipe.title }}</div>
     {% endfor %}
 </div>
