@@ -5,13 +5,12 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 /*------ NAV ------*/
 
 .site-nav {
-    background-color: lightcoral;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,4 +77,19 @@ body {
     font-weight: 600;
     color: #333;
     text-align: center;
+}
+
+/*------ RECIPE PAGE ------*/
+.recipe-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+@media (max-width: 700px) {
+  .recipe-content {
+    grid-template-columns: 1fr;
+  }
 }
